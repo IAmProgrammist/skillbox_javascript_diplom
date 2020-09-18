@@ -1,0 +1,51 @@
+.photo-item{
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.photo-wrapper{
+  position: relative;
+}
+
+.loader{
+  position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.photo-wrapper img{
+  display: inline-block;
+}
+
+.likes-duration{
+  display: inline-block;
+}
+
+.like-button{
+  background-color: transparent;
+  outline: none;
+  background-image: url(heart-no.png);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  border: none;
+  margin-right: 10px;
+}
+
+.image-wrapper{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.liked{
+    background-image: url(heart-yes.png);
+}

@@ -1,0 +1,57 @@
+.big-image{
+    position: relative;
+    z-index: 30;
+}
+
+.image-active .big-image-container{
+    display: flex;
+}
+
+.big-image-container{
+    display: none;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 20;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    margin: auto;
+    background-color: rgb(0, 0, 0, .1);
+}
+
+.big-image-item{
+    padding: 10px 40px 10px 40px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 20;
+    height: 90%;
+    max-height: 1080px;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+}
+
+.big-photo-img{
+    display: block;
+    flex-grow: 1;
+    max-height: 80% !important;
+    margin: 20px 0;
+}
+
+.close-button{
+    position: absolute;
+    right: 40px;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    background: transparent;
+    border: none;
+    background-image: url("close.svg");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: center;
+}
