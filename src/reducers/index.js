@@ -41,9 +41,9 @@ const reducer = (state, action) => {
             break;
         case "SCROLLED":
             const stateCopy = { ...state };
-            if (!state.loading) {
-                if (action.scrollValue) {
-                    state.loading = true;
+            if (action.scrollValue) {
+                if (!stateCopy.loading) {
+                    stateCopy.loading = true;
                     let loader = stateCopy.photoDownloader; 
                     const request = async () => {
                         let a = await loader.photos
@@ -54,18 +54,17 @@ const reducer = (state, action) => {
                                 json.map((it, i) => {
                                     stateCopy.photos.push(it);
                                 });
-                                console.log(stateCopy);
                                 stateCopy.photos.concat(resultArray);
                                 stateCopy.loading = false;
                             });
                     };
                     request();
-                    console.log(stateCopy);
                     return stateCopy;
                 } else {
                     result = stateCopy;
                 }
             } else {
+                stateCopy.loading = false;
                 result = stateCopy;
             }
             break;

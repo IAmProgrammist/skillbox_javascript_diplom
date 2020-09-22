@@ -20,10 +20,8 @@ const PhotoList = props => {
                         </div>
                         <div className="image-wrapper">
                             <LazyLoadImage
-                                alt={it.links.download}
-                                height={it.height}
-                                width={it.width}
-                                src={it.links.download}
+                                placeholderSrc={it.urls.thumb}
+                                src={it.urls.small}
                                 onClick={() => {
                                     photoClicked(it.id);
                                 }}

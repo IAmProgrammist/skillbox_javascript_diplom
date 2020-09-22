@@ -31,11 +31,11 @@ const BigPhoto = props => {
                                     </div>
 
                                     <LazyLoadImage
-                                        alt={it.links.download}
                                         height={it.height}
                                         width={it.width}
+                                        placeholderSrc={it.urls.thumb}
                                         className="big-photo-img"
-                                        src={it.links.download}
+                                        src={it.urls.regular}
                                     />
                                     <div className="likes">
                                         <button

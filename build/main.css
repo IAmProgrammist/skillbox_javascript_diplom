@@ -118,6 +118,12 @@ body{
     z-index: 30;
 }
 
+.lazy-load-image-background{
+    max-height: 90%;
+    max-width: 100%;
+    display: flex !important;
+}
+
 .image-active .big-image-container{
     display: flex;
 }
@@ -137,13 +143,14 @@ body{
 }
 
 .big-image-item{
-    padding: 10px 40px 10px 40px;
+    padding: 10px 40px 30px 40px;
     display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     z-index: 20;
     height: 90%;
+    max-width: 100%;
     max-height: 1080px;
     background-color: white;
     border-radius: 15px;
@@ -153,7 +160,7 @@ body{
 .big-photo-img{
     display: block;
     flex-grow: 1;
-    max-height: 80% !important;
+    max-height: 100%;
     margin: 20px 0;
 }
 

@@ -29,6 +29,6 @@ export const scrolled = (ev) => {
     const target = ev.target;
     return{
         type: "SCROLLED",
-        scrollValue: target.scrollHeight - target.scrollTop === target.clientHeight
+        scrollValue: target.scrollHeight - target.scrollTop - 200 < target.clientHeight
     }
 }
