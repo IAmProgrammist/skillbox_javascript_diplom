@@ -68,8 +68,6 @@ const reducer = (state, action) => {
                 result = stateCopy;
             }
             break;
-        case "LOADED":
-            break;
         default:
             result = state;
             break;

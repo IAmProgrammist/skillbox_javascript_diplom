@@ -1,10 +1,3 @@
-export const actionFunctions = () =>{
-  return {
-    type: "TEST",
-    value: "testing bruh"
-  }
-};
-
 export const photoClicked = (id) => {
   return{
     type: "PHOTO_CLICKED",

@@ -26,7 +26,6 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return{
-    actionFunctions: () => dispatch(actionFunctions()),
     photoClicked: (id) => dispatch(photoClicked(id)),
     photoClosed: () => dispatch(photoClosed()),
     likeClicked: (id) => dispatch(likeClicked(id)),

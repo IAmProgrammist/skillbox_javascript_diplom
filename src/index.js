@@ -12,6 +12,7 @@ const unsplash = new Unsplash({
     accessKey: "cBnPpakxBx-IWxu74sAcs9s2ptvxUSEWKwVICB0KAu8",
     secret: "j29XTDwZKf9XLUX9LduM47QFwyIUcBLNdnY_9qhEon4",
     callbackUrl: "http://localhost:8080/",
+  //http://rchat.info/skillbox_js_diplom/auth
 });
 
 const code = location.search.split("code=")[1];
